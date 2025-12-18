@@ -1,0 +1,8 @@
+{
+  "label": "Module 4: Vision-Language-Action (VLA)",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Implement speech-to-command pipelines, LLM-based task decomposition, and build a capstone autonomous humanoid system."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Module 1: The Robotic Nervous System (ROS 2)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn ROS 2 architecture, DDS-based communication, Python agents with rclpy, and URDF modeling for humanoid robots."
+  }
+}

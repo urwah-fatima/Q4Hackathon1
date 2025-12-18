@@ -1,55 +1,159 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+==================
+Version change: 0.0.0 → 1.0.0 (MAJOR - initial constitution ratification)
+
+Modified principles: N/A (initial version)
+
+Added sections:
+- Core Principles (6 principles: Accuracy First, Context Primacy, Technical Rigor, Clarity, Reproducibility, Modularity)
+- Authorship Standards (citation, attribution, quality)
+- Content Development Workflow (research, verification, review)
+- Governance (amendment procedures, versioning)
+
+Removed sections: N/A (initial version)
+
+Templates requiring updates:
+- ✅ plan-template.md - Constitution Check section compatible
+- ✅ spec-template.md - Requirements/Success criteria compatible
+- ✅ tasks-template.md - Phase structure compatible
+
+Follow-up TODOs: None
+-->
+
+# Physical AI & Humanoid Robotics Book Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accuracy First
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+All factual claims, technical specifications, and procedural descriptions MUST be verifiable against authoritative sources. This principle supersedes completeness—incomplete but accurate content is preferable to comprehensive but unverifiable content.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+**Non-negotiables:**
+- Every technical claim MUST cite at least one authoritative source
+- Unverified information MUST be explicitly marked as "unverified" or "requires verification"
+- Speculative content MUST be clearly distinguished from established fact
+- When sources conflict, all perspectives MUST be presented with source attribution
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### II. Context Primacy
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+MCP-provided Docusaurus documentation serves as the primary source of truth for all project-related technical content. External sources supplement but never override MCP context.
 
-### [PRINCIPLE_6_NAME]
+**Non-negotiables:**
+- MCP-provided documentation takes precedence over general knowledge
+- When MCP context is unavailable, explicitly state the alternative source used
+- All technical workflows MUST be validated against MCP-provided specifications
+- Deviations from MCP guidance MUST be justified and documented
 
+### III. Technical Rigor
 
-[PRINCIPLE__DESCRIPTION]
+Content MUST reflect the standards of peer-reviewed academic and industry publications. All technical content undergoes verification against official vendor documentation and established research.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+**Acceptable source hierarchy (in order of preference):**
+1. MCP-provided Docusaurus documentation
+2. Official vendor/manufacturer documentation
+3. Peer-reviewed academic publications (IEEE, ACM, arXiv with peer review)
+4. Industry whitepapers from established organizations
+5. Technical standards documents (ISO, IEC, ROS REPs)
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+**Non-negotiables:**
+- Citation style: APA format (inline references where appropriate)
+- Plagiarism tolerance: 0% (all content must be original or properly attributed)
+- Code examples MUST be tested and functional
+- Mathematical formulations MUST be verified for correctness
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### IV. Clarity
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All content targets readers with computer science or robotics background (undergraduate level or higher). Writing MUST be precise, unambiguous, and free of unnecessary jargon.
+
+**Non-negotiables:**
+- Flesch-Kincaid grade level: appropriate for technical graduate audience
+- Technical terms MUST be defined on first use
+- Acronyms MUST be expanded on first occurrence per chapter
+- Complex concepts MUST include illustrative examples
+- Avoid marketing language; prefer precise technical description
+
+### V. Reproducibility
+
+All technical workflows, code examples, and procedures MUST be logically complete and internally consistent. A qualified reader should be able to reproduce any described process.
+
+**Non-negotiables:**
+- All code examples MUST include version specifications for dependencies
+- Hardware configurations MUST specify exact models and firmware versions
+- Simulation environments MUST document all parameters
+- Step-by-step procedures MUST be tested before publication
+- Known limitations and failure modes MUST be documented
+
+### VI. Modularity
+
+Each chapter MUST function as an independent unit while contributing to the complete system architecture. Cross-references are permitted but no chapter may require another to be comprehensible.
+
+**Non-negotiables:**
+- Each chapter MUST have clearly defined prerequisites
+- Shared concepts MUST be briefly restated rather than assumed
+- Code modules MUST be self-contained with explicit imports
+- Chapter dependencies MUST form a directed acyclic graph (no circular dependencies)
+
+## Authorship Standards
+
+### Citation and Attribution
+
+- **Primary format**: APA 7th edition
+- **In-text citations**: Author-date format for academic sources
+- **Code attribution**: Comment header with source URL and license
+- **Figure attribution**: Caption with source and permission status
+- **Data attribution**: Methodology section with dataset provenance
+
+### Quality Gates
+
+All content MUST pass these gates before inclusion:
+
+1. **Source verification**: Every claim traced to acceptable source
+2. **Technical review**: Code/math verified by execution or proof
+3. **Clarity review**: Terminology consistent, definitions present
+4. **Reproducibility check**: Procedures tested on clean environment
+
+## Content Development Workflow
+
+### Research Phase
+
+1. Query MCP-provided documentation first
+2. Supplement with official vendor documentation
+3. Cross-reference against peer-reviewed literature
+4. Document all sources in working bibliography
+
+### Verification Phase
+
+1. Test all code examples in specified environments
+2. Verify mathematical derivations
+3. Validate hardware specifications against datasheets
+4. Confirm API contracts against current documentation
+
+### Review Phase
+
+1. Technical accuracy review (source verification)
+2. Clarity review (terminology, structure)
+3. Reproducibility review (procedure completeness)
+4. Consistency review (cross-chapter alignment)
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution establishes the authoritative standards for all content in the Physical AI & Humanoid Robotics book project. All contributors, human and AI, MUST adhere to these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Amendment Procedure
+
+1. Proposed amendments MUST be documented with rationale
+2. Amendments MUST specify affected sections and migration requirements
+3. Version increment follows semantic versioning:
+   - MAJOR: Principle removal or fundamental redefinition
+   - MINOR: New principle or substantial guidance expansion
+   - PATCH: Clarification, correction, or minor refinement
+4. All amendments MUST update dependent templates (plan, spec, tasks)
+
+### Compliance
+
+- All pull requests MUST verify constitution compliance
+- Complexity or deviation MUST be justified against principles
+- Runtime development guidance in `CLAUDE.md` supplements but does not override this constitution
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-18 | **Last Amended**: 2025-12-18

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 6
-title: "Launch Files and Parameters"
+title: "Chapter 1.6: Launch Files and Parameters"
 description: "Orchestrate complex ROS 2 humanoid systems using Python launch files, parameter configuration, and composable node patterns."
 keywords: [ROS 2, launch files, parameters, configuration, YAML]
 ---
 
-# Launch Files and Parameters
+# Chapter 1.6: Launch Files and Parameters
 
 **Prerequisites**: Chapter 1.5 (URDF for Humanoid Modeling)
 **Learning Objectives**: By the end of this chapter, you will be able to:

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 5
-title: "Sim-to-Real Transfer"
+title: "Chapter 3.5: Sim-to-Real Transfer"
 description: "Transfer learned policies from simulation to physical humanoid robots using domain adaptation and system identification."
 keywords: [sim-to-real, transfer learning, domain adaptation, robotics, deployment]
 ---
 
-# Sim-to-Real Transfer
+# Chapter 3.5: Sim-to-Real Transfer
 
 **Prerequisites**: Chapter 3.4 (Reinforcement Learning)
 **Learning Objectives**: By the end of this chapter, you will be able to:

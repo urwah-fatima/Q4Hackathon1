@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-title: "Isaac Sim and Synthetic Data"
+title: "Chapter 3.1: Isaac Sim and Synthetic Data"
 description: "Generate synthetic training data for humanoid AI using NVIDIA Isaac Sim's domain randomization and Replicator pipelines."
 keywords: [Isaac Sim, synthetic data, domain randomization, NVIDIA, Omniverse, AI training]
 ---
 
-# Isaac Sim and Synthetic Data
+# Chapter 3.1: Isaac Sim and Synthetic Data
 
 **Prerequisites**: Module 2 (Digital Twin Simulation)
 **Learning Objectives**: By the end of this chapter, you will be able to:

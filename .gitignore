@@ -30,3 +30,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Backend
+backend/.venv/
+backend/.env
+*.pyc
+__pycache__/

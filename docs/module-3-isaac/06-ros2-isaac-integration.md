@@ -1,11 +1,11 @@
 ---
 sidebar_position: 6
-title: "ROS 2 and Isaac Integration"
+title: "Chapter 3.6: ROS 2 and Isaac Integration"
 description: "Orchestrate complete humanoid AI pipelines by integrating Isaac Sim, Isaac ROS, and ROS 2 control stacks."
 keywords: [ROS 2, Isaac, integration, pipeline, orchestration, humanoid]
 ---
 
-# ROS 2 and Isaac Integration
+# Chapter 3.6: ROS 2 and Isaac Integration
 
 **Prerequisites**: Chapter 3.5 (Sim-to-Real Transfer)
 **Learning Objectives**: By the end of this chapter, you will be able to:

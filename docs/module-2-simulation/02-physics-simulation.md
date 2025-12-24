@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-title: "Physics Simulation"
+title: "Chapter 2.2: Physics Simulation"
 description: "Configure physics engines for humanoid robot simulation, covering contact dynamics, joint friction, and stable whole-body control."
 keywords: [physics, simulation, dynamics, contact, friction, Gazebo]
 ---
 
-# Physics Simulation
+# Chapter 2.2: Physics Simulation
 
 **Prerequisites**: Chapter 2.1 (Gazebo Environment Setup)
 **Learning Objectives**: By the end of this chapter, you will be able to:

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 3
-title: "URDF and SDF Usage"
+title: "Chapter 2.3: URDF and SDF Usage"
 description: "Compare URDF and SDF robot description formats, covering conversion workflows and best practices for humanoid simulation."
 keywords: [URDF, SDF, robot description, conversion, Gazebo, ROS 2]
 ---
 
-# URDF and SDF Usage
+# Chapter 2.3: URDF and SDF Usage
 
 **Prerequisites**: Chapter 2.2 (Physics Simulation)
 **Learning Objectives**: By the end of this chapter, you will be able to:

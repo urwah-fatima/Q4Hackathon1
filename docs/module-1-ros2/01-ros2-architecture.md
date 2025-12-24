@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-title: "ROS 2 Architecture"
+title: "Chapter 1.1: ROS 2 Architecture"
 description: "Learn the foundational architecture of ROS 2, including DDS middleware, QoS policies, and real-time capabilities for humanoid robotics."
 keywords: [ROS 2, DDS, middleware, robotics, architecture, QoS]
 ---
 
-# ROS 2 Architecture
+# Chapter 1.1: ROS 2 Architecture
 
 **Prerequisites**: None
 **Learning Objectives**: By the end of this chapter, you will be able to:

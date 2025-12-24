@@ -1,11 +1,11 @@
 ---
 sidebar_position: 4
-title: "Unity Visualization"
+title: "Chapter 2.4: Unity Visualization"
 description: "Integrate Unity with ROS 2 for high-fidelity humanoid robot visualization, digital twins, and interactive simulation interfaces."
 keywords: [Unity, visualization, ROS 2, digital twin, rendering, robotics]
 ---
 
-# Unity Visualization
+# Chapter 2.4: Unity Visualization
 
 **Prerequisites**: Chapter 2.3 (URDF and SDF Usage)
 **Learning Objectives**: By the end of this chapter, you will be able to:

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 3
-title: "Nav2 for Humanoid Navigation"
+title: "Chapter 3.3: Nav2 for Humanoid Navigation"
 description: "Configure the ROS 2 Navigation Stack (Nav2) for bipedal humanoid locomotion with custom planners and controllers."
 keywords: [Nav2, navigation, path planning, humanoid, ROS 2, locomotion]
 ---
 
-# Nav2 for Humanoid Navigation
+# Chapter 3.3: Nav2 for Humanoid Navigation
 
 **Prerequisites**: Chapter 3.2 (Isaac ROS and VSLAM)
 **Learning Objectives**: By the end of this chapter, you will be able to:

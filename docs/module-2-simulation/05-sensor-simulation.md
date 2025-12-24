@@ -1,11 +1,11 @@
 ---
 sidebar_position: 5
-title: "Sensor Simulation"
+title: "Chapter 2.5: Sensor Simulation"
 description: "Simulate cameras, LiDAR, IMU, and force sensors for humanoid robots in Gazebo with realistic noise models."
 keywords: [sensors, simulation, LiDAR, camera, IMU, Gazebo, robotics]
 ---
 
-# Sensor Simulation
+# Chapter 2.5: Sensor Simulation
 
 **Prerequisites**: Chapter 2.4 (Unity Visualization)
 **Learning Objectives**: By the end of this chapter, you will be able to:

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-title: "Nodes, Topics, and Services"
+title: "Chapter 1.2: Nodes, Topics, and Services"
 description: "Master ROS 2 communication primitives: nodes as computational units, topics for pub/sub messaging, and services for request/response patterns."
 keywords: [ROS 2, nodes, topics, services, pub/sub, robotics]
 ---
 
-# Nodes, Topics, and Services
+# Chapter 1.2: Nodes, Topics, and Services
 
 **Prerequisites**: Chapter 1.1 (ROS 2 Architecture)
 **Learning Objectives**: By the end of this chapter, you will be able to:

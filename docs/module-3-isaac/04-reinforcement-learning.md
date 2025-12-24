@@ -1,11 +1,11 @@
 ---
 sidebar_position: 4
-title: "Reinforcement Learning"
+title: "Chapter 3.4: Reinforcement Learning"
 description: "Train humanoid locomotion and manipulation policies using reinforcement learning in Isaac Gym and Isaac Sim."
 keywords: [reinforcement learning, RL, locomotion, policy, Isaac Gym, humanoid]
 ---
 
-# Reinforcement Learning
+# Chapter 3.4: Reinforcement Learning
 
 **Prerequisites**: Chapter 3.3 (Nav2 for Humanoid Navigation)
 **Learning Objectives**: By the end of this chapter, you will be able to:

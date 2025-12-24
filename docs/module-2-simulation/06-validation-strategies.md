@@ -1,11 +1,11 @@
 ---
 sidebar_position: 6
-title: "Validation Strategies"
+title: "Chapter 2.6: Validation Strategies"
 description: "Validate simulation fidelity against real humanoid hardware, identifying and quantifying the sim-to-real gap."
 keywords: [validation, sim-to-real, testing, verification, simulation, robotics]
 ---
 
-# Validation Strategies
+# Chapter 2.6: Validation Strategies
 
 **Prerequisites**: Chapter 2.5 (Sensor Simulation)
 **Learning Objectives**: By the end of this chapter, you will be able to:

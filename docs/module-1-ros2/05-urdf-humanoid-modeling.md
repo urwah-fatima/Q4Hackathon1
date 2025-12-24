@@ -1,11 +1,11 @@
 ---
 sidebar_position: 5
-title: "URDF for Humanoid Modeling"
+title: "Chapter 1.5: URDF for Humanoid Modeling"
 description: "Define humanoid robot models using URDF, covering links, joints, kinematic chains, and physical properties for simulation and control."
 keywords: [URDF, humanoid, robot model, links, joints, ROS 2]
 ---
 
-# URDF for Humanoid Modeling
+# Chapter 1.5: URDF for Humanoid Modeling
 
 **Prerequisites**: Chapter 1.4 (Python Agents with rclpy)
 **Learning Objectives**: By the end of this chapter, you will be able to:

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 3
-title: "Actions and Communication"
+title: "Chapter 1.3: Actions and Communication"
 description: "Implement long-running robotic tasks with ROS 2 actions, featuring goals, feedback, and cancellation for humanoid motion control."
 keywords: [ROS 2, actions, communication, feedback, goal, robotics]
 ---
 
-# Actions and Communication
+# Chapter 1.3: Actions and Communication
 
 **Prerequisites**: Chapter 1.2 (Nodes, Topics, and Services)
 **Learning Objectives**: By the end of this chapter, you will be able to:

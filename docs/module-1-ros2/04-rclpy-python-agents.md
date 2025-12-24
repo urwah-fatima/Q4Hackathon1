@@ -1,11 +1,11 @@
 ---
 sidebar_position: 4
-title: "Python Agents with rclpy"
+title: "Chapter 1.4: Python Agents with rclpy"
 description: "Build ROS 2 nodes in Python using rclpy, covering node lifecycle, executors, callbacks, and practical patterns for humanoid agents."
 keywords: [ROS 2, rclpy, Python, agents, callbacks, robotics]
 ---
 
-# Python Agents with rclpy
+# Chapter 1.4: Python Agents with rclpy
 
 **Prerequisites**: Chapter 1.3 (Actions and Communication)
 **Learning Objectives**: By the end of this chapter, you will be able to:

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-title: "Gazebo Environment Setup"
+title: "Chapter 2.1: Gazebo Environment Setup"
 description: "Configure Gazebo Fortress simulation environments for humanoid robotics, including world files, models, and ROS 2 integration."
 keywords: [Gazebo, simulation, environment, world files, ROS 2, robotics]
 ---
 
-# Gazebo Environment Setup
+# Chapter 2.1: Gazebo Environment Setup
 
 **Prerequisites**: Module 1 (ROS 2 Fundamentals)
 **Learning Objectives**: By the end of this chapter, you will be able to:

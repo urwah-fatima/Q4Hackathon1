@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-title: "Isaac ROS and VSLAM"
+title: "Chapter 3.2: Isaac ROS and VSLAM"
 description: "Deploy GPU-accelerated visual SLAM for humanoid localization using NVIDIA Isaac ROS and cuVSLAM."
 keywords: [Isaac ROS, VSLAM, localization, NVIDIA, SLAM, visual odometry]
 ---
 
-# Isaac ROS and VSLAM
+# Chapter 3.2: Isaac ROS and VSLAM
 
 **Prerequisites**: Chapter 3.1 (Isaac Sim and Synthetic Data)
 **Learning Objectives**: By the end of this chapter, you will be able to:

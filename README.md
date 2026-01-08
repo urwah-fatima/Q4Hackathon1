@@ -2,6 +2,14 @@
 
 A comprehensive technical guide covering the complete Physical AI pipeline—from perception to action—using modern robotics frameworks and AI systems.
 
+## Features
+
+- **Interactive AI Chatbot (Pagy)** - Ask questions about the book content in English, Urdu, or Roman Urdu
+- **RAG-Powered Search** - Get accurate answers with source references from the book
+- **Text Selection Q&A** - Highlight any text and ask "What does this mean?"
+- **Mobile Responsive** - Full-screen chat experience on mobile devices
+- **Dark/Light Mode** - Seamless theme integration with Docusaurus
+
 ## Overview
 
 This book provides in-depth coverage of building intelligent humanoid robots, organized into 4 modules with 24 chapters:
@@ -41,19 +49,24 @@ This book provides in-depth coverage of building intelligent humanoid robots, or
 ## Tech Stack
 
 - **Documentation Framework**: [Docusaurus 3.x](https://docusaurus.io/)
+- **AI Chatbot Backend**: FastAPI + Cohere + Qdrant
+- **Embeddings**: Cohere embed-english-v3.0
+- **Vector Database**: Qdrant Cloud
+- **LLM**: Cohere Command R+
 - **Robotics Middleware**: ROS 2 Humble Hawksbill
 - **Simulation**: Gazebo Fortress, NVIDIA Isaac Sim
 - **AI/ML**: PyTorch, TensorRT, Isaac Gym
-- **Deployment**: Vercel
+- **Deployment**: Vercel (Frontend) + Railway/Render (Backend)
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 18.0 or higher
-- npm or yarn
+- Python 3.11+ (for backend)
+- [uv](https://docs.astral.sh/uv/) (Python package manager)
 
-### Installation
+### Frontend Installation
 
 ```bash
 # Clone the repository
@@ -68,6 +81,27 @@ npm start
 ```
 
 The site will be available at `http://localhost:3000/`
+
+### Backend Setup (for AI Chatbot)
+
+```bash
+# Navigate to backend
+cd backend
+
+# Create .env file with your API keys
+cat > .env << EOF
+COHERE_API_KEY=your-cohere-api-key
+QDRANT_URL=https://your-cluster.qdrant.io
+QDRANT_API_KEY=your-qdrant-api-key
+EOF
+
+# Install dependencies and run
+uv sync
+uv run python ingest_markdown.py  # Ingest book content (first time only)
+uv run uvicorn app.main:app --reload --port 8000
+```
+
+The API will be available at `http://localhost:8000/`
 
 ### Build for Production
 
@@ -87,9 +121,21 @@ The static files will be generated in the `build/` directory.
 │   ├── module-3-isaac/     # NVIDIA Isaac Integration
 │   ├── module-4-vla/       # Vision-Language-Action
 │   └── references.md       # Bibliography
+├── backend/                 # FastAPI RAG Backend
+│   ├── app/                # API application
+│   │   ├── main.py        # FastAPI endpoints
+│   │   ├── agent.py       # Cohere LLM integration
+│   │   ├── retriever.py   # Qdrant vector search
+│   │   └── config.py      # Settings
+│   └── ingest_markdown.py  # Book content ingestion
+├── src/
+│   ├── components/
+│   │   └── ChatWidget/     # AI Chatbot component
+│   ├── theme/
+│   │   └── Root.js        # Docusaurus root wrapper
+│   └── css/               # Custom styling
 ├── specs/                   # Spec-driven development artifacts
 ├── history/                 # Prompt history records
-├── src/css/                # Custom styling
 ├── static/                 # Static assets
 ├── docusaurus.config.js    # Docusaurus configuration
 ├── sidebars.js             # Sidebar navigation
@@ -98,11 +144,24 @@ The static files will be generated in the `build/` directory.
 
 ## Deployment
 
-### Vercel (Recommended)
+### Frontend - Vercel (Recommended)
 
 1. Import the repository in [Vercel Dashboard](https://vercel.com)
 2. Vercel auto-detects Docusaurus
 3. Click Deploy
+
+### Backend - Railway/Render
+
+1. Create a new project on [Railway](https://railway.app) or [Render](https://render.com)
+2. Connect your GitHub repository
+3. Set the root directory to `backend`
+4. Add environment variables:
+   - `COHERE_API_KEY`
+   - `QDRANT_URL`
+   - `QDRANT_API_KEY`
+5. Deploy
+
+After deploying the backend, update `src/components/ChatWidget/config.js` with your backend URL.
 
 ### GitHub Pages
 
